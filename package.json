@@ -1,0 +1,31 @@
+{
+  "name": "react-component",
+  "version": "1.0.0",
+  "description": "first component",
+  "main": "index.js",
+  "scripts": {
+    "start": "node js/script.js",
+    "test": "npm run test:html && npm run test:js",
+    "test:html": "nu-html-checker *.html",
+    "test:js": "node_modules/.bin/jshint js/",
+    "init-project": "npm run init:dirs && npm run init:files && npm run init:gitignore && npm run init:npm-install",
+    "init:dirs": "mkdir -p images js",
+    "init:files": "touch README.md index.html js/script.js",
+    "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
+    "init:npm-install": "npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkruszyk/react-contacts.git"
+  },
+  "author": "mkruszyk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkruszyk/react-contacts/issues"
+  },
+  "homepage": "https://github.com/mkruszyk/react-contacts#readme",
+  "dependencies": {
+    "jshint": "^2.9.5",
+    "nu-html-checker": "^0.1.0"
+  }
+}

@@ -16,7 +16,6 @@ var movies = [{
   img: 'images/dunkirk.jpg'
 }];
 
-
 var MovieTitle = React.createClass({
   propTypes: {
     title: React.PropTypes.object.isRequired,
@@ -67,7 +66,7 @@ var MovieImage= React.createClass({
   },
   render: function() {
     return (
-      React.createElement('img', {src: this.props.img}) // TU MOZE BYC BLAD
+      React.createElement('img', {src: this.props.img})
     );
   }
 });
